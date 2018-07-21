@@ -1,0 +1,1 @@
+<a href="{{ route('productuser.show',$id) }}" class="btn btn-primary">Beli</a>

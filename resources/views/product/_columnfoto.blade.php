@@ -1,0 +1,1 @@
+<img src="{{ asset('upload/'.$foto) }}" style="width: auto; height: 150px;">
