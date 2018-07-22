@@ -112,7 +112,9 @@ class KonfirmasiController extends Controller
         ->addColumn(['data' => 'hargapesan', 'product.name'=>'hargapesan', 'title'=>'Harga', 'orderable'=>false, 'searchable'=>false])
         ->addColumn(['data' => 'total', 'name'=>'total', 'title'=>'Total Harga', 'orderable'=>false, 'searchable'=>false]);
 
-        return view('bayar.show')->with(compact('html','total'));
+        $bayar = Bayar::find($id);
+
+        return view('bayar.show')->with(compact('html','total','bayar'));
     }
 
     /**
